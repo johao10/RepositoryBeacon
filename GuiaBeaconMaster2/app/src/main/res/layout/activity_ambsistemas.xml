@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginRight="10dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginBottom="10dp"
     android:background="@color/colorBlanco"
-    tools:context=".Ambsistemas">
+    tools:context=".Activitys.Ambsistemas">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbarThumbHorizontal="@color/colorGranada"
+        android:scrollbarThumbVertical="@color/colorGranada">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/campus"/>
+                android:background="@drawable/campus" />
 
 
             <LinearLayout
@@ -37,7 +36,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/edtHorario"
+                    android:id="@+id/edtid"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:hint="ID"
@@ -162,12 +161,14 @@
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:gravity="center">
+
                 <TextView
                     android:layout_width="45dp"
                     android:layout_height="wrap_content"
@@ -245,6 +246,7 @@
                     android:visibility="visible" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -260,17 +262,16 @@
                     android:textSize="10sp" />
 
 
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="258dp"
                 android:layout_height="195dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="20dp"
-                android:layout_gravity="center_horizontal"
                 android:orientation="vertical">
 
                 <ImageView
